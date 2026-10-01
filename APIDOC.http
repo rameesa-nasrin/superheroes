@@ -1,0 +1,48 @@
+#api call for listing heroes
+###
+GET http://127.0.0.1:8000/heroes/
+Accept: application/json
+
+
+#api call for creating superrheroes
+###
+POST http://127.0.0.1:8000/heroes/
+Content-Type: application/json
+
+{
+    "name":"Iron Man",
+    "real_name":"Tony Stark",
+    "age":40,
+    "power":"power armor",
+    "origin":"USA",
+    "team":"avengers",
+    "universe":"mar"
+    }
+
+
+#api call for fetching superheroes
+###
+GET http://127.0.0.1:8000/heroes/1/
+Accept: application/json
+
+
+#api call for updating superhero
+###
+PUT http://127.0.0.1:8000/heroes/3/
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Super-man",
+    "real_name": "Clark Kent",
+    "age": 35,
+    "power": "super strength",
+    "origin": "krypton",
+    "team": "Justice League",
+    "universe": "DC"
+}
+
+#api call for deleting record
+### 
+DELETE http://127.0.0.1:8000/heroes/2/
+Accept: application/json
